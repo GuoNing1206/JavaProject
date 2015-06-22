@@ -1,4 +1,4 @@
-package guo;
+ï»¿package guo;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 /**=========================================================
 
-  Ö÷º¯Êı
+  ä¸»å‡½æ•°
 
 =========================================================**/
 public class ConnectMySQL
@@ -23,7 +23,7 @@ public class ConnectMySQL
 
 /**=========================================================
 
-  ±í¸ñÏÔÊ¾
+  è¡¨æ ¼æ˜¾ç¤º
 
 =========================================================**/
 class DumpTables
@@ -35,7 +35,7 @@ class DumpTables
   {
     try
     {
-      Class.forName("com.mysql.jdbc.Driver").newInstance(); //MYSQLÇı¶¯
+      Class.forName("com.mysql.jdbc.Driver").newInstance(); //MYSQLé©±åŠ¨
       oConnection = DriverManager.getConnection(
         "jdbc:mysql://127.0.0.1:3306/guodb", "root", "");
       oStatement = oConnection.createStatement();
@@ -83,12 +83,12 @@ class DumpTables
       System.out.println("============================");
       System.out.println("==== Table: addressbook ====");
       System.out.println("============================");
-      //²éÑ¯Êı¾İ²¢Êä³ö
+      //æŸ¥è¯¢æ•°æ®å¹¶è¾“å‡º
       ResultSet selectRes = oStatement.executeQuery(
         "SELECT name, cellPhone FROM addressbook");
       while(selectRes.next())
       {
-        //Ñ­»·Êä³ö½á¹û¼¯
+        //å¾ªç¯è¾“å‡ºç»“æœé›†
         String name = selectRes.getString("name");
         String cellPhone = selectRes.getString("cellPhone");
         System.out.println("name: " + name + "\tcellPhone: " + cellPhone);
@@ -111,7 +111,7 @@ class DumpTables
         "SELECT HEX(id) as id FROM testbin");
       while (selectRes.next()) 
       {
-        //Ñ­»·Êä³ö½á¹û¼¯
+        //å¾ªç¯è¾“å‡ºç»“æœé›†
         String id = selectRes.getString("id");
         System.out.println("id: " + id);
       }
