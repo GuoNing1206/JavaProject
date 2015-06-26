@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MeshShow</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="char_jiutian">九天玄女</string>
+    <string name="char_shangren">商人</string>
+    <string name="char_minzhong">武夫</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.meshshow.MainActivity" >
+
+    <item
+        android:id="@+id/action_jiutian"
+        android:orderInCategory="100"
+        android:title="@string/char_jiutian"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_shangren"
+        android:orderInCategory="100"
+        android:title="@string/char_shangren"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_minzhong"
+        android:orderInCategory="100"
+        android:title="@string/char_minzhong"
+        app:showAsAction="never"/>
+
+</menu>
